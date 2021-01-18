@@ -1,9 +1,20 @@
-import React from 'react';
-import Main from './containers/Main';
+import Background from "./components/layout/Background"
+import Center from "./components/layout/Center";
+import Main from "./components/views/Main";
+import './App.scss';
 
 function App() {
   return (
-    <Main />  
+    <div className="container">
+
+      <Background>
+      <Center>
+        <Main/>
+      </Center>
+      </Background>
+    
+    </div>
+
   );
 }
 
